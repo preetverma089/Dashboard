@@ -1,5 +1,6 @@
 import { Component ,ElementRef} from '@angular/core';
 import { Router } from '@angular/router';
+import {HttpService} from './http.service'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,10 +8,16 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'admindashboard';
-  constructor(private elementRef: ElementRef,  public  _router: Router) { }
+  constructor(private elementRef: ElementRef,  public  _router: Router, private WS:HttpService) { }
+
+  getData(){
+    this.WS.getUsers().subscribe({  
+    })
+    
+  }
 
   ngOnInit() {
-
+this.getData();
     var s = document.createElement("script");
     s.type = "text/javascript";
     s.src = "../assets/js/main.js";
