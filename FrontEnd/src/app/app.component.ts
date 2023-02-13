@@ -11,8 +11,10 @@ export class AppComponent {
   constructor(private elementRef: ElementRef,  public  _router: Router, private WS:HttpService) { }
 
   getData(){
-    this.WS.getUsers().subscribe({  
-    })
+    this.WS.post('fetch/user').subscribe((res:any)=>{
+      console.log(res)
+    }
+    )
     
   }
 

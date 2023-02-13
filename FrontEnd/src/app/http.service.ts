@@ -11,7 +11,7 @@ export class HttpService {
     private WS:HttpClient
   ) { }
  
-  getUsers(){
-  return this.WS.get(`${this.apiUrl}`)
+  post(url:string, input:any={}){
+  return this.WS.post(this.apiUrl+ url, input,)
  }
 }
