@@ -6,7 +6,8 @@ const data= new register({
     userName:req.body.userName,
     name:req.body.name,
     password:req.body.password,
-    email:req.body.email
+    email:req.body.email,
+    type:req.body.type,
 })
  data.save().then(data=>{
     res.json(data)

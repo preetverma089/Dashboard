@@ -12,6 +12,9 @@ var registerSchema = new mongoose.Schema({
     },
     password:{
         type:String,
+    },
+    type:{
+        type:Number
     }
 })
 

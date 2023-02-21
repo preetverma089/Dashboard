@@ -9,6 +9,9 @@ var usersSchema = new mongoose.Schema({
     },
     Gender:{
         type:String,
+    },
+    type:{
+        type:Number,
     }
 })
 

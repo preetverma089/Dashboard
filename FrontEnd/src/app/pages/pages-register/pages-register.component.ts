@@ -20,7 +20,8 @@ public name:any;
     name:this.name,
     userName:this.userName,
     email:this.email,
-    password:this.password
+    password:this.password,
+    type:1
     }
     ).subscribe((res:any)=>{
 console.log(res);

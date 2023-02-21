@@ -34,7 +34,8 @@ import { PagesRegisterComponent } from './pages/pages-register/pages-register.co
 import { UsersProfileComponent } from './pages/users-profile/users-profile.component';
 
 const routes: Routes = [
-  { path: '', component: DashboardComponent },
+  { path: '', component: PagesLoginComponent,},
+  { path: 'pages-login', component: PagesLoginComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'alerts', component: AlertsComponent },
   { path: 'accordion', component: AccordionComponent },
@@ -64,7 +65,6 @@ const routes: Routes = [
   { path: 'pages-contact', component: PagesContactComponent },
   { path: 'pages-error404', component: PagesError404Component },
   { path: 'pages-faq', component: PagesFaqComponent },
-  { path: 'pages-login', component: PagesLoginComponent },
   { path: 'pages-register', component: PagesRegisterComponent },
   { path: 'user-profile', component: UsersProfileComponent },
 ];
